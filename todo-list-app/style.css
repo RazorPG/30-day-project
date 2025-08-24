@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    rgb(12, 62, 136),
+    rgb(107, 17, 129)
+  );
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+  --checkbox-image: url('images/unchecked.png');
+}
+
+#container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+h1 {
+  color: rgb(32, 25, 95);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+h1::after {
+  content: '';
+  display: inline-block;
+  padding: 15px;
+  background-image: url('images/icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+input {
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  outline: none;
+  border: none;
+  background: rgb(219, 226, 248);
+  border-radius: 50px;
+  width: 64%;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.add {
+  outline: 3px solid #fff;
+  width: 30%;
+  right: 0;
+  color: white;
+  background: #e41e0f;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.grupInput {
+  position: relative;
+  width: 25rem;
+  height: 2.7rem;
+  /* padding-bottom: 2rem; */
+}
+.grupInput input,
+.grupInput button {
+  position: absolute;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+li span {
+  flex: 1;
+  margin: 0;
+}
+li button {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+li::before {
+  content: '';
+  display: inline-block;
+  padding: 12px;
+  margin-right: 10px;
+  background-image: var(--checkbox-image);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.checked {
+  text-decoration: line-through;
+}
