@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #353131;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 15px;
+  margin: 0;
+  font-size: 20px;
+}
+
+h2 {
+  max-width: 250px;
+}
+
+input {
+  padding: 1rem 1rem;
+  width: 12rem;
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background: #fff;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: #fff;
+}
+
+#card {
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  background: linear-gradient(
+    to bottom right,
+    rgb(18, 219, 176),
+    rgb(114, 66, 160)
+  );
+}
+
+#head {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  /* padding-top: 20px; */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+#content img {
+  width: 200px;
+}
+
+#content div {
+  text-align: center;
+}
+
+#content .info-more {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#content .more {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+#content .more img {
+  width: 30px;
+}
+
+#content .more div {
+  text-align: start;
+}
+#content .more p {
+  font-size: 12px;
+}
