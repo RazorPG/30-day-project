@@ -6,7 +6,7 @@ const copyPassword = document.querySelector('img')
 // button generate password
 generateBtn.addEventListener('click', () => {
   let result = ''
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 12; i++) {
     result += String.fromCharCode(Math.floor(Math.random() * 65 + 60))
   }
   generatePassword.value = result
