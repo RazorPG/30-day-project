@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 2rem;
+  background: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  min-width: 20rem;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  align-self: center;
+  border: 1px solid slategray;
+  padding: 0.5rem;
+}
+
+input {
+  padding: 0.6rem 0.8rem;
+  outline: 1px solid gray;
+  background: aliceblue;
+  border: none;
+  min-width: 20rem;
+}
+
+button {
+  padding: 0.6rem 0.8rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: rgb(85, 20, 236);
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
