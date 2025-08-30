@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(148, 157, 206);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  padding: 2rem;
+  background: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #000;
+  min-width: 30rem;
+  min-height: 10rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1::after {
+  display: block;
+  margin: auto;
+  width: 10%;
+  height: 2px;
+  background: rgb(0, 183, 255);
+  content: '';
+}
+
+.quote {
+  font-weight: bold;
+  max-width: 30rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.author {
+  text-align: end;
+}
+.author::before {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  content: '';
+  background: rgb(0, 183, 255);
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+button {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  outline: 1px solid rgb(0, 183, 255);
+  border: none;
+}
+.generate {
+  background: rgb(0, 183, 255);
+  color: white;
+}
