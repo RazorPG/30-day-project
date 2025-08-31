@@ -1,0 +1,107 @@
+:root {
+  --success: rgb(0, 128, 0);
+  --error: rgb(255, 0, 0);
+  --invalid: rgb(255, 165, 0);
+}
+
+body {
+  background: rgb(221, 184, 219);
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background: rgb(54, 62, 70);
+  color: aliceblue;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  outline: none;
+}
+
+.container-notification {
+  position: fixed;
+  width: 20rem;
+  height: 20rem;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.notification {
+  padding: 0.8rem;
+  background: aliceblue;
+  box-shadow: 0px 0px 5px #797474;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  animation: showNotification 0.5s ease-in;
+}
+
+.notification::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  animation: durationNotification 5s ease-in;
+}
+
+.success::after {
+  background-color: var(--success);
+}
+
+.error::after {
+  background-color: var(--error);
+}
+
+.invalid::after {
+  background-color: var(--invalid);
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.success i {
+  color: var(--success);
+}
+
+.error i {
+  color: var(--error);
+}
+
+.invalid i {
+  color: var(--invalid);
+}
+
+@keyframes showNotification {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes durationNotification {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
