@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="container-nav">
+        <button>
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <img src="assets/images/468-thumbnail.png" alt="cover-music" />
+      <div class="info" style="text-align: center">
+        <h2>Despacito</h2>
+        <p>Luis Fansi Ft. Puerto Rican</p>
+      </div>
+      <audio
+        id="myAudio"
+        src="assets/sounds/NEFFEX - Go_ 🚀 [Copyright-Free] No.147 [X5cfg26vkOQ].mp3"
+      ></audio>
+      <input type="range" id="music" name="music" value="0" />
+      <div class="container-button">
+        <button class="increaseTrack">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="player">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="addTrack">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+body {
+  background: rgb(71, 79, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.card {
+  background: #dbaed5;
+  padding: 1rem;
+  box-shadow: 0 0 5px #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-width: 15rem;
+  min-height: 20rem;
+  gap: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 10rem;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgb(223, 175, 88);
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.container-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  margin: 0.5rem 0;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-nav button {
+  width: 2rem;
+  height: 2rem;
+  color: #dbaed5;
+}
+
+.container-button button {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+input {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+input:in-range {
+  background: #dbaed5;
+}
+
+button {
+  background: white;
+  color: #dbaed5;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px rgb(223, 175, 88);
+}
+
+.container-button .player {
+  background: rgb(224, 68, 217);
+  color: white;
+  width: 3.7rem;
+  height: 3.7rem;
+  font-size: 1.5rem;
+}
+
+#music {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #f53192;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#music::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: #f53192;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
