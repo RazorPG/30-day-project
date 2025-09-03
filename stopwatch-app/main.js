@@ -58,7 +58,7 @@ setInterval(() => {
       }
     }
   }
-  // ubah nilai span tidak detik
+  // ubah nilai span detik menit jam
   seconds.textContent = secondsValue.toString().padStart(2, '0')
   minutes.textContent = minutesValue.toString().padStart(2, '0')
   hours.textContent = hoursValue.toString().padStart(2, '0')

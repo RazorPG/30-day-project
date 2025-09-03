@@ -1,0 +1,70 @@
+body {
+  background: rgb(200, 211, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  max-width: 20rem;
+  gap: 10px;
+  border-radius: 5px;
+  background: rgb(50, 69, 87);
+  padding: 1.5rem;
+  box-shadow: inset;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: end;
+  color: white;
+  text-shadow: 1px 1px #000;
+  text-wrap: wrap;
+  width: 100%;
+}
+
+.input {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.container-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+button {
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background: rgb(50, 69, 87);
+  box-shadow: -5px -5px 5px 1px rgba(255, 255, 255, 0.1),
+    5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.op {
+  color: rgb(86, 206, 206);
+}
+
+.eval {
+  grid-column: 2 span;
+}
