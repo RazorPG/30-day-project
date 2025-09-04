@@ -1,0 +1,77 @@
+body {
+  background: rgb(57, 87, 117);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.submit {
+  padding: 0.5rem 2.5rem;
+  border-radius: 50px;
+  outline: 1px solid #000;
+  background: white;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+}
+
+.popup {
+  text-align: center;
+  width: 15rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  animation: showPopup 0.5s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup::before {
+  content: '';
+  display: inline-block;
+  margin: 0 auto;
+  transform: translateY(-50px);
+  width: 80px;
+  height: 80px;
+  background-image: url('images/404-tick.png');
+  background-size: contain;
+}
+
+p {
+  font-size: 0.8rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.ok {
+  background: rgb(22, 224, 66);
+  color: white;
+  width: 100%;
+  padding: 0.4rem 0;
+  border-radius: 5px;
+}
+
+@keyframes showPopup {
+  0% {
+    transform: translateY(-200%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
