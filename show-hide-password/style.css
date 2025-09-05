@@ -1,0 +1,33 @@
+body {
+  background: rgb(42, 13, 95);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-box {
+  padding: 1rem;
+  width: 20rem;
+  height: 1rem;
+  background: white;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: inset;
+}
+input {
+  outline: none;
+  border: none;
+  flex: 1;
+  padding: 1rem 0;
+}
+
+img {
+  cursor: pointer;
+}
