@@ -1,0 +1,98 @@
+:root {
+  --dark-color: #1a1a1a;
+  --light-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--light-color);
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  font-size: 1.3rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0 5rem;
+  display: flex;
+  color: var(--dark-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  color: var(--dark-color);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  align-self: end;
+  flex: 1;
+  transition: all 0.5s ease-in;
+}
+
+/* saat hover */
+.profile:hover .photo {
+  transform: translate(-50px, -50px);
+}
+
+.profile:hover .bg {
+  transform: translateX(50px);
+}
+
+.profile img {
+  transition: transform 0.5s ease-out;
+  position: absolute;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h1 span {
+  color: #ff4c2c;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+p {
+  margin-bottom: 3rem;
+}
