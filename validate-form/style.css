@@ -1,0 +1,84 @@
+body {
+  background: rgb(35, 38, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 2rem;
+  background: white;
+  width: 27rem;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  flex: 1;
+}
+
+.input div {
+  flex: 2;
+  position: relative;
+  border-bottom: 1px solid #807979;
+}
+
+.input div span {
+  top: 0;
+  right: 0;
+  position: absolute;
+  color: red;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  height: 7rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  width: 30%;
+  padding: 0.5rem 1.2rem;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  align-self: start;
+}

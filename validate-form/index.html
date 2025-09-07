@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form Validate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="input">
+          <label for="name">Full Name</label>
+          <div>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <span class="hidden">Name is required</span>
+          </div>
+        </div>
+        <div class="input">
+          <label for="phone">Phone No.</label>
+          <div>
+            <input type="number" id="phone" placeholder="123 456 7890" />
+            <span class="hidden">Phone is required</span>
+          </div>
+        </div>
+        <div class="input">
+          <label for="email">Email Id</label>
+          <div>
+            <input type="email" id="email" placeholder="Enter Email" />
+            <span class="hidden">Email is required</span>
+          </div>
+        </div>
+        <div class="input">
+          <label for="message">Your Message</label>
+          <div>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <span class="hidden">Message is required</span>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+
+        <div class="error">
+          <span class="hidden">please fix error submit</span>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
