@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="back" onclick="handleButtonScrollGallery('back')">
+        <img src="images/back.png" alt="back" />
+      </button>
+      <div class="container-gallery">
+        <div class="gallery-images">
+          <img src="images/image-1.png" alt="image1" />
+          <img src="images/image-2.png" alt="image2" />
+          <img src="images/image-3.png" alt="image3" />
+          <img src="images/image-4.png" alt="image4" />
+          <img src="images/image-5.png" alt="image5" />
+        </div>
+      </div>
+      <button class="next" onclick="handleButtonScrollGallery('next')">
+        <img src="images/next.png" alt="next" />
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

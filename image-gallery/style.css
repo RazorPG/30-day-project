@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(29, 32, 34);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back,
+.next {
+  z-index: 999;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.container-gallery {
+  padding: 1.6rem;
+  scroll-behavior: smooth;
+  width: 100rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: all ease-in 0.5s;
+}
+
+.container-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.gallery-images img {
+  transition: all ease-in 0.2s;
+  filter: grayscale();
+}
+
+.gallery-images img:hover {
+  scale: 1.05;
+  filter: none;
+}
