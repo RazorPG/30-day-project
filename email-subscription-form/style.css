@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('images/background.png');
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.container p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.container h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.container span {
+  font-size: 1.2rem;
+}
+
+.container .msg {
+  color: green;
+}
+
+.container-input {
+  width: 30rem;
+  height: 3rem;
+  display: flex;
+  margin: 0.8rem 0;
+  box-shadow: inset;
+}
+.container-input input {
+  flex: 1;
+  outline: none;
+  padding: 0.5rem 0.6rem;
+  border: none;
+  background: white;
+}
+
+.container-input button {
+  outline: none;
+  background: green;
+  padding: 0.5rem 1.3rem;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
