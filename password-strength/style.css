@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --message: red;
+}
+
+body {
+  background: rgb(53, 56, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 6rem;
+}
+
+.container-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#password {
+  padding: 0.7rem;
+  width: 16rem;
+  background: none;
+  outline: none;
+  border: 1px solid var(--message);
+  color: white;
+  padding-right: 2rem;
+}
+
+.container-input img {
+  position: absolute;
+  right: 0;
+  padding: 0.5rem;
+}
+
+span {
+  font-size: 0.9rem;
+  color: var(--message);
+}
+
+.hidden {
+  display: none;
+}
