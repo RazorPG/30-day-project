@@ -1,9 +1,9 @@
 // variabel waktu
 const times = {
   seconds: 5,
-  minutes: 1,
+  minutes: 17,
   hours: 0,
-  days: 1,
+  days: 0,
 }
 
 // dom query selector
