@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to top right, rgb(77, 33, 50), rgb(19, 19, 75));
+}
+
+.container {
+  border-radius: 10px;
+  background: green;
+  overflow: hidden;
+  display: flex;
+}
+
+.dates {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 5rem 1rem;
+}
+
+.dates h1 {
+  font-size: 5rem;
+}
+
+.dates p {
+  font-size: 3rem;
+}
+
+.month-year {
+  padding: 5rem 1rem;
+  font-size: 3rem;
+
+  background: rgb(255, 38, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
