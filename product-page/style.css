@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(167, 231, 231);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .product-image {
+  position: relative;
+  width: 500px;
+  background: rgb(36, 32, 32);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.container .slider {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container .slider input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.container .slider input:checked {
+  background: white;
+  transform: scale(1.2);
+}
+
+.product-details {
+  background: white;
+  height: 750px;
+  width: 450px;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-details .breadcrumbs {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.product-details .breadcrumbs .product-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.product-details .breadcrumbs .product-price {
+  font-size: 2.2rem;
+  color: rgb(104, 99, 99);
+  font-weight: 600;
+}
+.product-details .breadcrumbs .product-discount {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(12, 209, 143);
+  text-transform: uppercase;
+}
+
+.product-details p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.product-details .options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-details .options .size {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-details .options .size label,
+.product-details .options .color label,
+.product-details .options .quantity label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: gray;
+  flex: 1;
+}
+
+.product-details .options .size .size-options {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  flex: 2;
+}
+
+.product-details .options .size .size-options .size-option,
+.product-details .options .color .color-options .color-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.product-details .options .size .size-options input {
+  appearance: none;
+}
+
+.product-details .options .size .size-options label,
+.product-details .options .color .color-options input {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-details .options .size .size-options input:checked + label {
+  color: rgb(94, 31, 240);
+  border: none;
+}
+
+.product-details .options .color {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-details .options .color .color-options {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  flex: 2;
+}
+
+.product-details .options .color .color-options input {
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-details .options .color .color-options input:checked {
+  outline: 2px solid blue;
+  outline-offset: 3px;
+}
+.product-details .options .color .color-options #red {
+  background: red;
+}
+
+.product-details .options .color .color-options #green {
+  background: green;
+}
+
+.product-details .options .color .color-options #blue {
+  background: blue;
+}
+
+.product-details .options .color .color-options #cream {
+  background: #f5f5dc;
+}
+
+.product-details .options .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-details .options .quantity label {
+  flex: 1;
+}
+
+.product-details .options .quantity input {
+  width: 50px;
+  padding: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  flex: 2;
+}
+
+.product-details .buy {
+  background: rgb(94, 31, 240);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
