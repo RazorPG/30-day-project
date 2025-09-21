@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('images/background.png') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 0 6rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20rem;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 6rem;
+  right: 6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a .logo {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+nav .lang-button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.3rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+header {
+  color: white;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+header h1 span {
+  color: #fe950a;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+header .explore-button {
+  background: #fe950a;
+  border: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+main {
+  align-self: end;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+}
+
+main section {
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  color: white;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+main section p {
+  font-size: 0.9rem;
+  color: #fe950a;
+}
+
+main section img {
+  width: 35px;
+  height: auto;
+}
