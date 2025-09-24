@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and drop items</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="itemList"
+      class="container item-list"
+      ondrop="dropHandler(event)"
+      ondragover="dragoverHandler(event)"
+    >
+      <div
+        id="item1"
+        class="item"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+        ondragend="dragendHandler(event)"
+      >
+        List Item 1
+      </div>
+      <div
+        id="item2"
+        class="item"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+      >
+        List Item 2
+      </div>
+      <div
+        id="item3"
+        class="item"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+      >
+        List Item 3
+      </div>
+      <div
+        id="item4"
+        class="item"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+      >
+        List Item 4
+      </div>
+    </div>
+
+    <div
+      id="dropArea"
+      class="container drop-area"
+      ondrop="dropHandler(event)"
+      ondragover="dragoverHandler(event)"
+    ></div>
+    <script src="main.js"></script>
+  </body>
+</html>
