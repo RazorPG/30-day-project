@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image Search Engine</h1>
+    <form id="searchForm" onsubmit="submitBtn(event)">
+      <input
+        type="text"
+        id="searchQuery"
+        placeholder="Search for images..."
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="image-container" id="imageContainer"></div>
+    <button id="loadMoreBtn" class="hidden" onclick="loadMore()">
+      Load More
+    </button>
+    <script src="main.js"></script>
+  </body>
+</html>
